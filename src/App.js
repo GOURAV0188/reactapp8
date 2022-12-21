@@ -9,13 +9,15 @@ function App() {
     <div className="App">
      <>
     
-    <BrowserRouter>
+    <BrowserRouter   basename='/reactapp8'>
     
     <Routes>
+
+<Route exact  path="/reactapp8"  element={<Home />} />
+
     <Route  path="/login"  element={<Login />} />
 <Route path="/register" element= {<Register/>} />
 
-<Route  path="/"  element={<Home />} />
 
 
     </Routes>
